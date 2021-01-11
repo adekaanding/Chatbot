@@ -1,0 +1,218 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey",
+        "Hello",
+        "Hi, what can I do for you?",
+        "Hello there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "Thanks for visiting",
+        "Goodbye",
+        "Bye!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["You're welcome", "Welcome", "My pleasure"]
+    },
+    {
+      "tag": "open",
+      "patterns": [
+        "When does the office opens?",
+        "What is the opening time of the office?",
+        "When can I go to the office?"
+      ],
+      "responses": [
+        "The office is open from 8AM until 5PM",
+        "You can go to the office which is open from 8AM until 5PM"
+      ]
+    },
+    {
+      "tag": "reports",
+      "patterns": [
+        "I am facing problems, how can I report to the office?",
+        "I want to report about something to the office",
+        "I want to do some reporting"
+      ],
+      "responses": [
+        "Sure, please contact the dormitory administrative number: 0198675436",
+        "Reporting can be done by going to this website: www.reportdorm.com"
+      ]
+    },
+   {
+      "tag": "contact",
+      "patterns": [
+        "I am facing problems, who can I contact?",
+        "Is there any number that I can contact?",
+        "Can you give me an emergency number?"
+      ],
+      "responses": [
+        "Dormitory emergency: 0119998876",
+        "Please contact this number immediately: 0119998876"
+      ]
+    },
+    {
+      "tag": "fees",
+      "patterns": [
+        "How much is the dormitory fees?",
+        "I want to know my dormitory fees",
+        "How much do I need to pay for dormitory fees?"
+      ],
+      "responses": [
+        "The dormitory fees for 1 semester is RM600, payment can be made through www.fpxums.com",
+        "Dormitory fees is RM600 per semester"
+      ]
+    },
+    {
+      "tag": "represent",
+      "patterns": [
+        "Who is the student representation for my dormitory?",
+        "How can I contact the students representation?"
+      ],
+      "responses": [
+        "The student representation can be contacted through 0187845432",
+        "You can contact 0187845432, he is the dormitory student representation"
+      ]
+    },
+    {
+      "tag": "cafe",
+      "patterns": [
+        "Where is the cafe?",
+        "When does the cafe open?",
+        "Where can I eat?"
+      ],
+      "responses": [
+        "The cafe is located near the dormitory office, it is open from 7AM until 10PM",
+        "Right beside the office, please go before 10 PM"
+      ]
+    },
+    {
+      "tag": "activity",
+      "patterns": [
+        "What are the dormitories activities for this week?",
+        "Is there any activities this week?",
+        "Where can I check dormitories activity?"
+      ],
+      "responses": [
+        "The activities can be checked on this website: www.dormactivity.com",
+        "Please go to www.dormactivity,com to check dormitories activity"
+      ]
+    },
+    {
+      "tag": "announcement",
+      "patterns": [
+        "How can I access the dormitories announcment?",
+        "Is there any announcement made by the dormitory?",
+        "Did the dormitory announced anything?"
+      ],
+      "responses": [
+        "For announcement, it can be checked in www.dorm.com",
+        "Please go to www.dorm.com"
+      ]
+    },
+    {
+      "tag": "damage",
+      "patterns": [
+        "My room has some minor damages, how can I report them?",
+        "I want to report about demages in my dorm"
+      ],
+      "responses": [
+        "Please go to www.reportdorm.com to report dormitory damage",
+        "Damages can be reported through www.reportdorm.com"
+      ]
+    },
+    {
+      "tag": "refund",
+      "patterns": [
+        "I want to make a refund on my dormitory fees",
+        "I do not live in dormitory anymore, how can I get a refund",
+        "I want a refund"
+      ],
+      "responses": [
+        "Sure, you can go to the dormitory office to request a refund",
+        "To request for refund, the process can be made in the dormitory office"
+      ]
+    },
+    {
+      "tag": "security",
+      "patterns": [
+        "Is there any security in this dormitory?",
+        "How can I contact the security?"
+      ],
+      "responses": [
+        "Yes, the chief security is Encik Hilmi, you can contact him through this number: 0176574325",
+        "Please contact this number: 018758532 (encik Hisyam)"
+      ]
+    },
+    {
+      "tag": "parking",
+      "patterns": [
+        "Where can i park my car?",
+        "Is there any parking in this dormitory?",
+        "Where is the parking?"
+      ],
+      "responses": [
+        "The parking is located near the cafe",
+        "You can park your car near the cafe which is a designated parking area for students"
+      ]
+    },
+    {
+      "tag": "address",
+      "patterns": [
+        "what is the postal address?",
+        "What address can I use to post my things?"    
+      ],
+      "responses": [
+        "the postal address is Dormitory Excellent, 89000 Sabah"
+      ]
+    },
+    {
+      "tag": "clubs",
+      "patterns": [
+        "Is there any clubs I can join?",
+        "I want to join a club"
+      ],
+      "responses": [
+        "You can contact the student represenation",
+        "Please contact the student representation for further details"
+      ]
+    },
+    {
+      "tag": "advisor",
+      "patterns": [
+        "Who is the advisor for dormitory?",
+        "Who can I contact if i want to talk to the advisor?"
+      ],
+      "responses": [
+        "Please contact encik Andy (0187965426)"
+      ]
+    },
+    {
+      "tag": "merit",
+      "patterns": [
+        "how can i check my merit?",
+        "I want to check my merit?"
+      ],
+      "responses": [
+        "You can do so by going to the office",
+        "Please go to the office to check merit"
+      ]
+    }
+  ]
+}

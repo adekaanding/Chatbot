@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #152238;
+}
+
+.input[type=text] {
+            background: #fbfbfb;
+            width: 360px;
+            height: 38px;
+            border: 2px solid #eee;
+            border-radius: 3px;
+            resize: none;
+            padding: 10px;
+            font-size: 15px;
+            color: #333;
+            margin-left: 10%;
+}
+
+#report {
+            display: none;
+        }
+
+        #roomreport {
+            display: none;
+        }
+
+        #toiletreport {
+            display: none;
+        }
+
+        #electricalreport {
+            display: none;
+        }
+
+        #contact {
+            display: none;
+        }
+
+        #staff {
+            display: none;
+        }
+
+        #technician {
+            display: none;
+        }
+
+        #cleaner {
+            display: none;
+        }
+
+        #fee {
+            display: none;
+        }
+.chatbox {
+    width: 500px;
+    min-width: 390px;
+    height: 600px;
+    background: #ededcc;
+    padding: 25px;
+    margin: 20px auto;
+    box-shadow: 0 3px #ccc;
+}
+
+.chatbox2 {
+    width: 500px;
+    min-width: 390px;
+
+    background: #F5F5DC;
+    padding: 15px;
+    margin-left: 45px;
+
+}
+
+.chatlogs {
+    padding: 10px;
+    width: 100%;
+    height: 450px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.chatlogs::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chatlogs::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, .1);
+}
+
+.chat {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.chat .user-photo {
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.chat .user-photo img {
+    width: 100%;
+}
+
+
+.chat .chat-message {
+    width: 80%;
+    padding: 11px;
+    margin: 5px 10px 0;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.friend .chat-message {
+    background: #1adda4;
+}
+
+.self .chat-message {
+    background: #1ddced;
+    order: -1;
+}
+
+.chat-form {
+
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.chat-form textarea {
+    background: #F5F5DC;
+    width: 75%;
+    height: 50px;
+    border: 2px solid #eee;
+    border-radius: 3px;
+    resize: none;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.chat-form textarea:focus {
+    background: #fff;
+}
+
+.chat-form textarea::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chat-form textarea::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, .1);
+}
+
+.chat-form button {
+    background: #1ddced;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    margin: 0 5px;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 #0eb2c1;
+    cursor: pointer;
+
+    -webkit-transition: background .2s ease;
+    -moz-transition: background .2s ease;
+    -o-transition: background .2s ease;
+}
+
+.chat-form button:hover {
+    background: #13c8d9;
+}
+
+input[type=submit] {
+    padding: 10px 15px;
+    background: #1ddced;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text] {
+    padding: 10px 100px 10px 100px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color: #333;
+}
+
+/*ChatBot*/
+.chat_icon {
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    z-index: 1000;
+    padding: 0;
+    font-size: 80px;
+    color: black;
+    cursor: pointer;
+}
+
+.chat_box {
+    width: 400px;
+    height: 80vh;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    background: red;
+    z-index: 1000;
+    transition: all 0.3s ease-out;
+    transform: scaleY(0);
+}
+
+.chat_box.active {
+    transform: scaleY(1);
+}
+
+#messages {
+    padding: 20px;
+}
+
+.my-conv-form-wrapper textarea {
+    height: 30px;
+    overflow: hidden;
+    resize: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.button {
+    border: none;
+    color: #F5F5DC;
+    padding: 4px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 3px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button1 {
+    background-color: #F5F5DC;
+    color: black;
+    border: 2px solid #1ddced;
+
+}
+
+.button1:hover {
+    background-color: #1ddced;
+    color: white;
+}
+
+.button2 {
+    background-color: #F5F5DC;
+    color: black;
+    border: 2px solid #1ddced;
+}
+
+.button2:hover {
+    background-color: #1ddced;
+    color: white;
+}

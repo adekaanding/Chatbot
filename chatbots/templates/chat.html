@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> UMS Dorm Chatbot </title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='stylesheets/external.css') }}">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="chatbox">
+        <div class="chatlogs" id="adeka">
+
+            <div class="chat friend">
+                <div class="user-photo"><img src="/static/stylesheets/img/p2.png"></div>
+                <p id=kok class="chat-message">Hello I'm UMS dormbot, I will answer your questions about UMS dormitory
+                    <div id="hehe" class="user-photo"><img src="/static/stylesheets/img/p2.png"></div>
+                    <p class="chat-message">How can I help you?</p>
+                    <button class="button button1" onclick="reporting()"> Report </button>
+                    <button class="button button2" onclick="contacting()"> Contact </button>
+                    <button class="button button2" onclick="fee()"> Fee </button>
+
+                    <div id="report">
+                        <div class="chat self">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p3.png"></div>
+                            <p class="chat-message">Report</p>
+                        </div>
+                        <div class="chat friend">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p2.png"></div>
+                            <p class="chat-message">Okay, what do you want to report about?</p>
+                            <button class="button button1" onclick="roomreporting()">Room problem</button>
+                            <button class="button button2" onclick="toiletreporting()">Toilet problem</button>
+                            <button class="button button2" onclick="electricalreporting()">Electrical problem</button>
+                        </div>
+                    </div>
+
+
+                    <div id="roomreport">
+                        <div class="chat self">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p3.png"></div>
+                            <p class="chat-message">Room problem</p>
+                        </div>
+                        <div class="chat friend">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p2.png"></div>
+                            <p class="chat-message">Sure, please go to <a
+                                    href="https://www.UMSdorm.com/room-report">https://www.UMSdorm.com/room-report</a>
+                                page to place your report and our contracter will go to your room as soon as possible
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="toiletreport">
+                        <div class="chat self">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p3.png"></div>
+                            <p class="chat-message">Toilet problem</p>
+                        </div>
+                        <div class="chat friend">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p2.png"></div>
+                            <p class="chat-message">Sure, please go to <a
+                                    href="https://www.UMSdorm.com/toilet-report">https://www.UMSdorm.com/toilet-report</a>
+                                page to place your report and our contracter will go to your room as soon as possible
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="electricalreport">
+                        <div class="chat self">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p3.png"></div>
+                            <p class="chat-message">Electrical problem</p>
+                        </div>
+                        <div class="chat friend">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p2.png"></div>
+                            <p class="chat-message">Sure, please go to <a
+                                    href="https://www.UMSdorm.com/electrical-report">https://www.UMSdorm.com/electrical-report</a>
+                                page to place your report and our electrician will go to your room as soon as possible
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="contact">
+                        <div class="chat self">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p3.png"></div>
+                            <p class="chat-message">Contact</p>
+                        </div>
+                        <div class="chat friend">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p2.png"></div>
+                            <p class="chat-message">Okay, who do you want to contact to?</p>
+                            <button class="button button1" onclick="staff()">Staff</button>
+                            <button class="button button2" onclick="technician()">Technician</button>
+                            <button class="button button2" onclick="cleaner()">Cleaner</button>
+                        </div>
+                    </div>
+
+                    <div id="staff">
+                        <div class="chat self">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p3.png"></div>
+                            <p class="chat-message">Staff</p>
+                        </div>
+                        <div class="chat friend">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p2.png"></div>
+                            <p class="chat-message">Okay, please contact this number: <a
+                                    href="https://www.UMSdorm.com/toilet-report">019-878 9361</a>(Puan Siti)</p>
+                        </div>
+                    </div>
+
+                    <div id="technician">
+                        <div class="chat self">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p3.png"></div>
+                            <p class="chat-message">Technician</p>
+                        </div>
+                        <div class="chat friend">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p2.png"></div>
+                            <p class="chat-message">Okay, please contact this number: <a
+                                    href="https://www.UMSdorm.com/toilet-report">017-671 9754</a>(Encik Wong)</p>
+                        </div>
+                    </div>
+
+                    <div id="cleaner">
+                        <div class="chat self">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p3.png"></div>
+                            <p class="chat-message">Cleaner</p>
+                        </div>
+                        <div class="chat friend">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p2.png"></div>
+                            <p class="chat-message">Okay, please contact this number: <a
+                                    href="https://www.UMSdorm.com/toilet-report">011-671 7852</a>(Encik Remy)</p>
+                        </div>
+                    </div>
+
+                    <div id="fee">
+                        <div class="chat self">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p3.png"></div>
+                            <p class="chat-message">Fee</p>
+                        </div>
+                        <div class="chat friend">
+                            <div class="user-photo"><img src="/static/stylesheets/img/p2.png"></div>
+                            <p class="chat-message">The fees for dormitory is RM 600.00 per semester. The fee is exclude
+                                of the University Fee which is different for each courses</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="chat-form">
+
+            <form name="myform" id="chatform" class="chat-form">
+                <input type="text" name="user_query" id="chatinput" onfocus="this.value=''" placeholder="Type a message"
+                    autocomplete="off">
+                <button type="submit" onclick="test()" value="Send">Send</button>
+
+                <body OnLoad="document.myform.user_query.focus();">
+
+        </div>
+    </div>
+    <script>
+        function reporting() {
+            document.getElementById("report").style.display = "block";
+        }
+
+        function roomreporting() {
+            document.getElementById("roomreport").style.display = "block";
+        }
+
+        function toiletreporting() {
+            document.getElementById("toiletreport").style.display = "block";
+        }
+
+        function electricalreporting() {
+            document.getElementById("electricalreport").style.display = "block";
+        }
+
+        function contacting() {
+            document.getElementById("contact").style.display = "block";
+        }
+
+        function staff() {
+            document.getElementById("staff").style.display = "block";
+        }
+
+        function technician() {
+            document.getElementById("technician").style.display = "block";
+        }
+
+        function cleaner() {
+            document.getElementById("cleaner").style.display = "block";
+        }
+
+        function fee() {
+            document.getElementById("fee").style.display = "block";
+        }
+        
+        function appendChat(user, bot) {
+            console.log('Trying to append')
+            console.log(user, bot)
+            $('#adeka').append(`<div class= "chat self" id="query">
+                <div class ="user-photo"><img src="/static/stylesheets/img/p3.png"></div>
+                <p class="chat-message">${user}</p>
+            </div>
+                        
+                        <div class ="chat friend" id="response">
+                <div class="user-photo"><img src="/static/stylesheets/img/p2.png"></div>
+                <p class="chat-message">${bot}</p>
+                        </div>`);
+
+        }
+        $('#chatform').on('submit', function (e) {
+            e.preventDefault();
+            user_input = $('#chatinput').val();
+
+            fetch('../chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: user_input
+                }),
+            }).then(response => response.json()).then(some => appendChat(user_input, some))
+        });
+    </script>
+
+</body>
+
+</html>
